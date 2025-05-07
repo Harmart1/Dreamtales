@@ -202,3 +202,28 @@ button:hover, a.button:hover {
         min-width: 100%;
     }
 }
+
+/* Icon styling */
+.icon {
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icon:hover {
+    filter: brightness(1.2);
+}
+
+/* Logo styling */
+nav img {
+    height: 50px;
+    margin: 10px;
+    transition: opacity 0.3s, box-shadow 0.3s;
+}
+
+nav img:hover {
+    opacity: 0.8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
