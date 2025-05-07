@@ -175,3 +175,30 @@ button:hover, a.button:hover {
 .carousel-control.next {
     right: 0;
 }
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        grid-template-areas:
+            "nav"
+            "home"
+            "about"
+            "stories"
+            "carousel"
+            "new-section"
+            "footer";
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .story {
+        flex-direction: column;
+    }
+
+    .carousel-item {
+        min-width: 100%;
+    }
+}
