@@ -1,9 +1,23 @@
 body {
-    background-color: #f0f0f0;
-    font-family: 'Arial', sans-serif;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f5f5dc;
+    font-family: 'Merriweather', serif;
     color: #333;
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-areas:
+        "nav"
+        "home"
+        "about"
+        "stories"
+        "carousel"
+        "new-section"
+        "footer";
+    grid-gap: 1em;
 }
 
 h1, h2, h3 {
@@ -33,6 +47,7 @@ nav {
     background-color: #333;
     color: #fff;
     padding: 1em;
+    grid-area: nav;
 }
 
 nav ul {
@@ -62,6 +77,26 @@ section {
     margin: 1em 0;
 }
 
+#home {
+    grid-area: home;
+}
+
+#about {
+    grid-area: about;
+}
+
+#stories {
+    grid-area: stories;
+}
+
+#carousel {
+    grid-area: carousel;
+}
+
+#new-section {
+    grid-area: new-section;
+}
+
 .story {
     display: flex;
     flex-direction: column;
@@ -79,6 +114,7 @@ footer {
     color: #fff;
     padding: 2em;
     text-align: center;
+    grid-area: footer;
 }
 
 footer a {
@@ -88,4 +124,54 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+button, a.button {
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+button:hover, a.button:hover {
+    background-color: #e03e00;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-item {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+.carousel-control.prev {
+    left: 0;
+}
+
+.carousel-control.next {
+    right: 0;
 }
