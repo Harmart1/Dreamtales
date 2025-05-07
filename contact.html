@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - DreamTales</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <img src="logo.png" alt="DreamTales Logo" style="height: 50px;">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="stories.html">Stories</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+        
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:contact@dreamtales.com">contact@dreamtales.com</a></p>
+        <p>Phone: +1 (555) 123-4567</p>
+        <p>Address: 123 DreamTales Lane, Storyville, ST 12345</p>
+        
+        <h2>Follow Us</h2>
+        <ul>
+            <li><a href="https://facebook.com/dreamtales">Facebook</a></li>
+            <li><a href="https://twitter.com/dreamtales">Twitter</a></li>
+            <li><a href="https://instagram.com/dreamtales">Instagram</a></li>
+        </ul>
+        
+        <h2>Our Location</h2>
+        <div id="map">
+            <!-- Embed a map showing the location of the organization (optional) -->
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact us at: <a href="mailto:contact@dreamtales.com">contact@dreamtales.com</a></p>
+        <p>Follow us on social media:</p>
+        <ul>
+            <li><a href="https://facebook.com/dreamtales">Facebook</a></li>
+            <li><a href="https://twitter.com/dreamtales">Twitter</a></li>
+            <li><a href="https://instagram.com/dreamtales">Instagram</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
